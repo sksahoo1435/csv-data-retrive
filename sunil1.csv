@@ -1,0 +1,13 @@
+import csv
+
+data = "Event ID"
+
+data=input("enter the event_id:- ")
+
+csv_file=csv.reader(open('sunil1.csv','rt'))
+
+for row in csv_file:
+
+    if data==row[3]:
+
+        print(row)
